@@ -1,0 +1,22 @@
+[package]
+name = "mirl_macros_lite"
+version = "0.0.0-alpha"
+edition = "2024"
+repository = "https://github.com/Miner3D-Gamer/mirl_macros_lite"
+license.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+maintenance.workspace = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = { version = "3.0", features = ["full"] }
+mirl_macros_core = { version = "0.0.0-alpha" }
+
+
+[lints]
+workspace = true
+
+[lib]
+proc-macro = true
